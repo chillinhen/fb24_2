@@ -1,0 +1,298 @@
+/*!
+ * Bootstrap v4.0.0 (https://getbootstrap.com)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+/** play with bourbon **/
+/*@import "bourbon";*/
+/*** Some individual SASS functions ***/
+/*** BSP: @extend %reset;***/
+/*** Mixins & Placeholders ***/
+/**** caret ****/
+/*@include icon-style ("\f075", 0, 1, 0, 2em);*/
+/* Bsp. @include alpha-background-color(rgba(black, 0.35), white); */
+/******* SVG *********/
+/*** WP Specials ***/
+/**** Filter ****/
+/*** typography***/
+/*@import "customs/colors";*/
+/*@import "reboot";
+@import "type";
+
+@import "images";
+@import "code";
+@import "grid";
+@import "tables";
+@import "forms";
+@import "buttons";*/
+.fade {
+  opacity: 0;
+  transition: opacity 0.15s linear; }
+  .fade.show {
+    opacity: 1; }
+
+.collapse {
+  display: none; }
+  .collapse.show {
+    display: block; }
+
+tr.collapse.show {
+  display: table-row; }
+
+tbody.collapse.show {
+  display: table-row-group; }
+
+.collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.35s ease; }
+
+/*@import "dropdown";
+@import "button-group";
+@import "input-group";
+@import "custom-forms";
+
+@import "nav";
+@import "navbar";
+
+@import "card";
+@import "breadcrumb";
+@import "pagination";
+@import "badge";
+@import "jumbotron";
+@import "alert";
+@import "progress";
+@import "media";
+@import "list-group";
+@import "close";
+@import "modal";
+@import "tooltip";
+@import "popover";
+@import "carousel";
+
+@import "utilities";
+@import "print";*/
+/* =============================================================================
+   Individual Colors
+   ========================================================================== */
+/*$dropdown-padding-y:             0;*/
+/*$card-bg:                        white;*/
+/*$btn-border-radius:           $border-radius !default;*/
+/** Globals **/
+/** Individual Layouts**/
+/** Colors **/
+/** Color per category**/
+/** Multiple & Alternating ***/
+/**Alternate Colors**/
+/*@import "customs/custom_reboot";
+@import "customs/custom_type";
+@import "customs/custom_buttons";
+@import "customs/custom_forms";
+@import "customs/custom_globals";
+@import "customs/custom_nav";
+@import "customs/custom_carousel";
+@import "customs/custom_modules";
+@import "customs/custom_layout";*/
+/*** Sidebar ***/
+#infoblock {
+  transition: all 400ms ease-out; }
+  #infoblock [id*="btn"] {
+    margin: 0 0 1px 0;
+    padding: 1em .5em; }
+    #infoblock [id*="btn"]:hover, #infoblock [id*="btn"]:focus {
+      cursor: pointer; }
+    #infoblock [id*="btn"][class*="cat"] {
+      color: white; }
+    #infoblock [id*="btn"].cat-blue {
+      background-color: #159EE5; }
+    #infoblock [id*="btn"].cat-pink {
+      background-color: #FF77A5; }
+    #infoblock [id*="btn"].cat-yellow {
+      background-color: #FF9A34; }
+    #infoblock [id*="btn"].cat-green {
+      background-color: #00B470; }
+  @media (min-width: 992px) {
+    #infoblock [id*="collapse"] {
+      display: block; } }
+  @media (min-width: 768px) {
+    #infoblock[class*="js-is-"] {
+      top: 100px !important; } }
+  @media (max-width: 991.98px) {
+    #infoblock {
+      margin: 1em 0;
+      border-top-left-radius: 1.2em;
+      border-top-right-radius: 1.2em;
+      border-bottom-right-radius: 1.2em;
+      border-bottom-left-radius: 1.2em;
+      overflow: hidden; } }
+  @media (max-width: 575.98px) {
+    #infoblock[class*="js-is-"] {
+      position: fixed !important;
+      top: 60px !important;
+      left: 0;
+      right: 0;
+      background: white;
+      z-index: 999; } }
+
+.tagcloud ul {
+  margin: 0;
+  padding: 0; }
+.tagcloud ul, .tagcloud li {
+  list-style: none;
+  font-size: 1.2rem;
+  color: white; }
+.tagcloud li {
+  display: inline-block;
+  margin: 0 0 .3em 1em;
+  padding: 0; }
+  .tagcloud li a {
+    position: relative;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 1em 0 .75em;
+    border-radius: 0 6px 6px 0;
+    text-decoration: none;
+    -webkit-transition: .2s;
+    transition: .2s; }
+    .tagcloud li a:before, .tagcloud li a:after {
+      position: absolute;
+      content: ''; }
+    .tagcloud li a:before {
+      top: 0;
+      left: -20px;
+      z-index: -1;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      -webkit-transition: .2s;
+      transition: .2s; }
+    .tagcloud li a:after {
+      top: 50%;
+      left: -6px;
+      z-index: 2;
+      display: block;
+      width: 6px;
+      height: 6px;
+      margin-top: -3px;
+      background-color: white;
+      border-radius: 100%; }
+    .tagcloud li a:hover {
+      background-color: #007bff; }
+  .tagcloud li:nth-child(4n+1) a {
+    background: #159EE5; }
+    .tagcloud li:nth-child(4n+1) a:before {
+      background: #159EE5; }
+  .tagcloud li:nth-child(4n+2) a {
+    background: #FF9A34; }
+    .tagcloud li:nth-child(4n+2) a:before {
+      background: #FF9A34; }
+  .tagcloud li:nth-child(4n+3) a {
+    background: #FF77A5; }
+    .tagcloud li:nth-child(4n+3) a:before {
+      background: #FF77A5; }
+  .tagcloud li:nth-child(4n+4) a {
+    background: #00B470; }
+    .tagcloud li:nth-child(4n+4) a:before {
+      background: #00B470; }
+  .tagcloud li span {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100px;
+    color: inherit; }
+
+#topicsBlock {
+  border-top-left-radius: 2em;
+  border-bottom-left-radius: 2em;
+  border-top-right-radius: 2em;
+  border-bottom-right-radius: 2em;
+  overflow: hidden; }
+  #topicsBlock [class*="col-"] {
+    padding: 1em; }
+  #topicsBlock [data-icon] {
+    font-size: 3rem;
+    margin-bottom: 1rem; }
+  #topicsBlock * {
+    color: white; }
+  #topicsBlock .cat-blue {
+    background: #159EE5; }
+  #topicsBlock .cat-yellow {
+    background: #FF9A34; }
+  #topicsBlock .cat-pink {
+    background: #FF77A5; }
+  #topicsBlock .cat-green {
+    background: #00B470; }
+  @media (min-width: 576px) {
+    #topicsBlock {
+      margin-top: 2rem; } }
+
+.bubble {
+  position: relative;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  background: #FF9A34;
+  color: white; }
+  .bubble:before {
+    content: '';
+    top: -48px;
+    position: absolute;
+    display: block;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 48px 0px 0 48px;
+    border-color: transparent transparent transparent #FF9A34;
+    left: 150px; }
+  @media (max-width: 767.98px) {
+    .bubble {
+      margin-top: 200px;
+      margin-bottom: 1rem; } }
+
+.parallax {
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-size: cover;
+  background-attachment: fixed; }
+  body[class*="cat"] .parallax {
+    background-image: url(../img/patrick-fore-358120-unsplash.jpg);
+    background-position: top left;
+    margin: 2em 0 0 0; }
+  .parallax.cat-yellow .parallax {
+    background-image: url(../img/img/look.jpg);
+    background-position: center center;
+    margin: 0 0 2em 0; }
+  .parallax [class*="col-"] {
+    padding: 100px 0; }
+  .parallax:before, .parallax:after {
+    content: '';
+    height: 0.3rem;
+    margin: 0;
+    width: 100%;
+    display: block;
+    background: linear-gradient(to right, #159EE5 0%, #159EE5 25%, #FF9A34 25%, #FF9A34 50%, #FF77A5 50%, #FF77A5 75%, #00B470 75%, #00B470 100%); }
+  .parallax * {
+    color: white;
+    font-weight: bold; }
+
+.modal-body {
+  padding: 2em; }
+
+.has-image .modal-header {
+  padding: 0;
+  height: 230px;
+  overflow: hidden; }
+
+.card[class*="Search"] {
+  display: none; }
+
+/*==================================================*/
+@media (min-width: 768px) {
+  body > main {
+    margin-top: 6.25rem; } }
+
+/*# sourceMappingURL=sidebar.css.map */

@@ -1,6 +1,6 @@
 jQuery(document).ready(function ($) {
     /*** responsive***/
-
+    //alert('hallo');
 
     function resizeWindow(e) {
         var newWindowWidth = $(window).width();
@@ -23,5 +23,16 @@ jQuery(document).ready(function ($) {
         e.stopPropagation();
         e.preventDefault();
     });
-
+    $('[class*="sub-cat-"] > div').each(function(){
+        if($(this).hasClass('d-flex')){
+            console.log("Found");
+           $(this).parent('div').addClass('sub-cat-large');
+        }
+    });
+//    if($('[class*="sub-cat-"] > div').hasClass('d-flex')){
+//        console.log("Found");
+//        $(this).parent('div')
+//                .css('border','1px solid red');
+//                //.addClass('sub-cat-large');
+//    }
 });
